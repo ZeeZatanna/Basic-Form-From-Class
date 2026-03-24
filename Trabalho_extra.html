@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho Extra</title>
+</head>
+<style>
+    div{
+        background-color: aliceblue;
+        width: 400px;
+        height: 600px;
+        padding: 10px;
+        border: 3px;
+        font-size: 18px;
+        margin: auto;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    header{
+        background-color: rgb(217, 234, 250);
+        width: 390px;
+        height: 70px;
+        padding: 5px;
+        align-items: center;
+        margin-bottom: 10px;
+        }
+    .B_Submit{
+        background-color: rgb(171, 233, 171);
+        width: 100px;
+        height: 35px;
+        padding: 5px;
+        border-radius: 10px;
+    }
+</style>
+<body>
+    <div class = "Container">
+        <header>
+        <h3>Formulário de Cadastro</h3>
+        </header>
+        <form>
+            <label for="nome">Nome Completo:</label>
+            <input type="text" name="nome" id="nome" placeholder="Seu nome aqui" required>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="seuemail@gmail.com" required>
+            <br><br>
+
+            <label for="assunto">Assunto:</label>
+            <select name="ass" id="ass" required>
+                <option value="" disabled selected>Escreva o assunto da mensagem aqui</option>
+                <option value="Relatar Problema">Relatar Problemas com a Rede</option>
+            </select>
+            <br><br>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea name="msg" id="msg" maxlength="500" placeholder="Escreva sua mensagem aqui..." required></textarea>
+            <br><br>
+
+            <label for="newsletter">Receber Newsletter</label>
+            <input type="checkbox" name="newsletter" id="newsletter" value="sim">
+            <br><br>
+
+            <button class="B_Submit" type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
